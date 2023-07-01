@@ -1,0 +1,449 @@
+/*  
+    --Marine-blue(hsl(213,96%,18%);
+    --Purpish-blue: hsl(243,100%,62%);
+    --Pastel-blue: hsl(228,100%,84%);
+    --Light-Blue: hsl(206,94%,87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+
+    --Cool-gray: hsl(231,11%,63%);
+    --Light-gray: hsl(229,24%,87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+
+    
+*/
+/* RIGHT SIDE */
+
+    /* STEP 1*/
+    .rstep1{
+        display: block;
+    }
+
+
+    .col2{
+        margin-top: 70px;
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    /* TEXT */
+
+    .info h2{
+        color: rgb(7, 7, 52);
+        font-size: 2em;
+        font-family: 'Ubuntu-Bold';
+        text-align: left;
+    }
+
+    .info p{
+        text-align: left;
+        color: rgb(156, 147, 147);
+        font-family: 'Ubuntu-Regular';
+    }
+
+
+    /* FORM */
+
+    .form{
+        margin-top: 30px;
+    }
+
+    .block {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .block label{
+        text-align: left;
+        display: inline-block;
+        font-weight: bold;
+        color: hsl(213,96%,18%);
+        font-size: 12px;
+        font-family: 'Ubuntu-Regular';
+    }
+
+    .errorl{
+        text-align: right;
+    }
+
+    .block input{
+        font-family: 'Ubuntu-Medium';
+        margin-top: 5px;
+        border: rgba(179, 169, 169, 0.31) 1px solid;
+        padding-left: 15px;
+        font-size: 17px;
+        color: hsl(213,96%,18%);
+        height: 45px;
+        border-radius: 8px;
+    }
+
+    .block input::placeholder{
+        color: rgb(153, 150, 150);
+    }
+
+    .block input:active{
+        border: 0.5px solid hsl(213,96%,18%);
+    }
+
+    .button{
+        margin-top: 50px;
+        text-align: right;
+        margin-left: 400px;
+    }
+
+    .button button {
+        color: white;
+        background-color: hsl(213,96%,18%);
+        font-family: 'Ubuntu-Regular';
+        border-radius: 10px;
+        font-size: 18px;
+        height: 50px;
+        width: 120%;
+    }
+
+/* STEP 2 RIGHT SIDE */
+
+    .rstep2{
+        display: block;
+        margin-left: 50px;
+
+    }
+
+    .scard2{
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .cards{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .scard{
+        cursor:pointer;
+        padding: 15px;
+        border-radius: 7px;
+        border: lightgray 1px solid;
+        width: 125px;
+        height: 130px;
+    }
+
+    .scard img{
+        width: 50px;
+        float: left;
+        text-align: left;
+    }
+
+    .card-info{
+        margin-top: 90px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title{
+        color: hsl(213,96%,18%);
+        text-align: left;
+        font-size: 17px;
+        font-family: 'Ubuntu-Regular';
+    }
+
+    .scard span{
+        color: rgb(186, 182, 182);
+        display: flex;
+        font-family: 'Ubuntu-Regular';
+        font-size: 15px;
+    }
+
+/* MONTH-YEAR*/
+    .period{
+        margin-top: 50px;
+        
+        background-color:  RGB(246,243,255);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem;
+        margin-bottom: 5rem;
+        justify-content: center;
+        width: 100%;
+        height: 25px;
+    }
+
+    .monthly,
+    .yearly{
+        color: lightslategrey;
+        font-family: 'Ubuntu-Medium';
+        font-weight: 500;
+    } 
+
+    .switch{
+        position: relative;
+        display: flex;
+        width: 60px;
+        height: 24px;
+    }
+
+    .switch input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    input:checked + .slider:before{
+        transform: translate(26px);
+        -webkit-transform: translateX(26px);
+        
+    }
+
+    .slider {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: hsl(213,96%,18%);
+        width: 100%;
+        height: 100%;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+    }
+
+    .slider:before{
+        position: absolute;
+        cursor: pointer;
+        content: "";
+        height: 16px;
+        width:16px;
+        left: 13px;
+        border-radius: 50%;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+    }
+
+    .slider.round{
+        border-radius: 34px;
+    }
+    .slider.orund::before{
+        border-radius: 50%;
+    }
+    .sw-active{
+        color:hsl(213,96%,18%);
+    }
+
+    /* BUTTONS */
+    .button2 a {
+        display: inline-flex;
+        color: gray;
+        margin-top: 15px;
+        font-size: 20px;
+        font-family: 'Ubuntu-Medium';
+    }
+
+    .button2{ 
+        margin-top: 100px;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
+    .button2 button {
+        color: white;
+        background-color: hsl(213,96%,18%);
+        font-family: 'Ubuntu-Regular';
+        border-radius: 10px;
+        font-size: 18px;
+        height: 50px;
+        width: 25%;
+    }
+
+/* STEP 3*/
+
+    .rstep3{
+        width: 100%;
+        margin-left: 50px;
+        display: block;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .box{
+        padding-left: 10px;
+        text-align: left;
+        height: 70px;
+        width: 100%;
+        border: 1px solid gray;
+        border-radius: 10px;
+        pad: 1rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .box input{
+        width: 17px;
+        height: 17px;
+        accent-color: hsl(243,100%,62%) ;
+    }
+
+    .box label{
+        color: hsl(213,96%,18%);
+        font-size: 17px;
+        font-family: 'Ubuntu-Medium';
+    }
+
+    .box small{
+        color: hsl(213,96%,18%);
+        font-family: 'Ubuntu-Regular';
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        grid-area: .3rem;
+        margin-left: 12px;
+    }
+    .price{
+        color: hsl(243,100%,62%);
+        font-family: 'Ubuntu-Regular';
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+/* STEP 4*/
+
+    .rstep4{
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .scard4{
+        width: 100%;
+    }
+
+    .scard4 hr{
+        padding: 0 1rem;
+        color: rgb(158, 154, 154);
+        width: 85%;
+    }
+
+    .selection-box{
+        width: 110%;
+        display: flex;
+        border-radius: 10px;
+        background-color: hsl(217, 100%, 97%);
+        font-family: 'Ubuntu-Medium';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .selected-plan{   
+        padding: 0px 1rem;
+        display: flex;
+        color: hsl(213,96%,18%);
+        font-weight: 700;
+        justify-content: space-between;
+        
+    }
+    .addons{
+        padding: 1rem;
+        font-family: 'Ubuntu-Regular';
+        color: rgb(158, 154, 154);
+        background-color: hsl(217, 100%, 97%);
+    }
+
+    .selected-addon{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .service-name{
+        margin-bottom: 5px;
+    }
+    .total{
+        width: 100%;
+        padding: 1rem;
+        color:  hsl(231,11%,63%);
+        font-family: 'Ubuntu-Regular';
+        background-color: hsl(231, 100%, 99%);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .total b{
+        color: hsl(243,100%,62%);
+        
+    }
+
+    /* BUTTONS */
+    .button3 a {
+        display: inline-flex;
+        color: gray;
+        margin-top: 15px;
+        font-size: 20px;
+        font-family: 'Ubuntu-Medium';
+    }
+
+    .button3{ 
+        margin-top: 150px;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
+    .button3 button {
+        color: white;
+        background-color: hsl(243,100%,62%);
+        font-family: 'Ubuntu-Regular';
+        border-radius: 10px;
+        font-size: 18px;
+        height: 55px;
+        width: 30%;
+    }
+
+    /* STEP 5 */
+
+    .rstep5{
+        padding: 0px 40px;
+        margin-top: 140px;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img img{
+        padding: 0;
+        width: 100px;
+    }
+
+    .thanks h2{
+            margin: 0;
+            color: rgb(7, 7, 52);
+            font-size: 2.5em;
+            font-family: 'Ubuntu-Bold';
+        }
+    
+    .thanks p{
+            font-size: 1.27em;
+            line-height: 1.5;
+            color: rgb(156, 147, 147);
+            font-family: 'Ubuntu-Regular';
+    }
+    
+    

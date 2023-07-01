@@ -1,0 +1,238 @@
+/* Importation of fonts*/
+@font-face {font-family: 'Ubuntu-Bold'; src: url(../fonts/Ubuntu-Bold.ttf) ;}
+@font-face {font-family: 'Ubuntu-Medium'; src: url(../fonts/Ubuntu-Medium.ttf) ;}
+@font-face {font-family: 'Ubuntu-Regular'; src: url(../fonts/Ubuntu-Regular.ttf) ;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+/* container */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* card */
+.card{
+    border-radius: 15px;
+    display: flex;
+    background-color: white;
+    width: 900px;
+    height: 600px;
+}
+/* LEFT SIDE*/
+.col1{
+    display: flex;
+}
+
+.step{
+    border-radius: 20px;
+    margin: 15px;
+    width: 274px;
+    height: 568px;
+    background-image: url("../images/bg-sidebar-desktop.svg");
+    position:relative;
+}
+.step-1{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .8rem;
+}
+
+.step1-content{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.step1-content label{
+    font-family: 'Ubuntu-Regular';
+    text-align: left;
+    font-size: 13px;
+    color: gainsboro;
+}
+
+.step1-content p{
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-family: 'Ubuntu-Bold';
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    border: white 2px solid;
+    color: white;
+
+}
+
+.circle-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    border: white 2px solid;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.84);
+}
+/* RIGHT SIDE */
+
+.col2{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+/* TEXT */
+.info h2{
+    color: rgb(7, 7, 52);
+    font-size: 2em;
+    font-family: 'Ubuntu-Bold';
+}
+
+.info p{
+    margin-top: 10px;
+    color: rgb(156, 147, 147);
+    font-family: 'Ubuntu-Regular';
+}
+
+/* FORM */
+
+.form{
+    margin-top: 30px;
+}
+
+.block {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.block label{
+    display: inline-block;
+    font-weight: bold;
+    color: hsl(213,96%,18%);
+    font-size: 12px;
+    font-family: 'Ubuntu-Regular';
+}
+
+.errorl{
+    text-align: right;
+}
+
+.block input{
+    font-family: 'Ubuntu-Medium';
+    margin-top: 5px;
+    border: rgba(179, 169, 169, 0.31) 1px solid;
+    padding-left: 15px;
+    font-size: 17px;
+    color: hsl(213,96%,18%);
+    height: 45px;
+    border-radius: 8px;
+}
+
+.block input::placeholder{
+    color: rgb(153, 150, 150);
+}
+
+.block input:active{
+    border: 0.5px solid hsl(213,96%,18%);
+}
+
+.button{
+    margin-top: 50px;
+    text-align: right;
+}
+
+.button button {
+    color: white;
+    background-color: hsl(213,96%,18%);
+    font-family: 'Ubuntu-Regular';
+    border-radius: 10px;
+    font-size: 18px;
+    height: 55px;
+    width: 30%;
+}
+
+/* STEP 2 RIGHT SIDE */
+
+.scard2{
+    margin-top: 50px;
+    width: 90%;
+}
+
+.cards{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 2rem;
+}
+
+.scard{
+    padding: 10px;
+    border-radius: 7px;
+    border: lightgray 1px solid;
+    width: 150px;
+    height: 170px;
+}
+
+.scard img{
+    float: left;
+    align-items: start;
+    text-align: left;
+    justify-content: start;
+}
+
+.scard b{
+    font-size: 20px;
+    font-family: 'Ubuntu-Medium';
+}
+
+.scard span{
+    display: flex;
+    font-family: 'Ubuntu-Regular';
+    font-size: 18px;
+}
+
+.period{
+    display: inline-block;
+    width: 100%;
+}
+
+.button a {
+    color: gray;
+    font-size: 20px;
+    font-family: 'Ubuntu-Medium';
+}
+
+.button{
+    display: block;
+    width: 100%;
+    
+}

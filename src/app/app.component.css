@@ -1,0 +1,101 @@
+/* Importation of fonts*/
+@font-face {font-family: 'Ubuntu-Bold'; src: url(../assets/fonts/Ubuntu-Bold.ttf) ;}
+@font-face {font-family: 'Ubuntu-Medium'; src: url(../assets/fonts/Ubuntu-Medium.ttf) ;}
+@font-face {font-family: 'Ubuntu-Regular'; src: url(../assets/fonts/Ubuntu-Regular.ttf) ;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+/* container */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* card */
+.card{
+    border-radius: 15px;
+    display: flex;
+    background-color: white;
+    width: 930px;
+    height: 600px;
+}
+/* LEFT SIDE*/
+.col1{
+    display: flex;
+}
+
+.step-box{
+    border-radius: 20px;
+    margin: 15px;
+    width: 274px;
+    height: 568px;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    position:relative;
+}
+.step-1{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .8rem;
+}
+
+.step1-content{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.step1-content label{
+    font-family: 'Ubuntu-Regular';
+    text-align: left;
+    font-size: 13px;
+    color: gainsboro;
+}
+
+.step1-content p{
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-family: 'Ubuntu-Bold';
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    border: white 2px solid;
+    color: white;
+
+}
+
+.circle-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    border: white 2px solid;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.84);
+}
